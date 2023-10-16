@@ -1,0 +1,22 @@
+﻿<Window x:Class="WorldPC.DirectorMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Мир ПК - Меню директора" Height="314" Width="241">
+    <Grid HorizontalAlignment="Center" Width="233" VerticalAlignment="Center" Height="285" Margin="0,0,0,-2">
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <Button Name="StaffListBtn" Click="StaffListBtn_Click" Content="Список сотрудников" HorizontalAlignment="Left" Margin="47,95,0,0" VerticalAlignment="Top" Width="144" Height="26" Background="#FF081555" Foreground="White"/>
+        <Button Name="StaffAddBtn" Click="StaffAddBtn_Click" Content="Добавить сотрудника" HorizontalAlignment="Left" Margin="47,134,0,0" VerticalAlignment="Top" Width="144" Height="33" Background="#FF081555" Foreground="White"/>
+        <Button Name="EquipmentListBtn" Click="EquipmentListBtn_Click" HorizontalAlignment="Center" Margin="47,180,42,0" VerticalAlignment="Top" Width="144" Height="36" Background="#FF081555" Foreground="White">
+            <TextBlock Text="Список техники (в ремонте)" TextWrapping="Wrap" Height="36" />
+        </Button>
+        <Button Name="BackBtn" Click="BackBtn_Click" Content="Выход" HorizontalAlignment="Left" Margin="89,236,0,0" VerticalAlignment="Top" Width="59" Height="25" Background="#FF081555" Foreground="White"/>
+        <Label Name="directorFullNamelbl" Foreground="white" Content="" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Меню директора" HorizontalAlignment="Left" Margin="66,54,0,0" VerticalAlignment="Top" Foreground="White"/>
+    </Grid>
+</Window>

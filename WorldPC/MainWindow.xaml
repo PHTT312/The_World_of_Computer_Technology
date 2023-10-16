@@ -1,0 +1,22 @@
+﻿<Window x:Class="WorldPC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Мир ПК - Авторизация" Height="286" Width="233">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14" Foreground="White"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="25,79,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14" Foreground="White"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Center" Margin="0,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183" Height="21" FontSize="14"/>
+        <Button x:Name="Entrance" Content="Вход" HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" Width="183" FontWeight="Normal" FontSize="14" Height="28" Click="Entrance_Click" Background="#FF081555" Foreground="White"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Width="183" Height="21" RenderTransformOrigin="0.383,0.612" FontSize="14"/>
+        <Button x:Name="WorkWithClientBtn" Click="WorkWithClientBtn_Click" Content="Работа с клиентом" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Width="183" FontWeight="Normal" FontSize="14" Height="28" Background="#FF081555" Foreground="White"/>
+
+
+    </Grid>
+</Window>

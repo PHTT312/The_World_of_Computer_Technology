@@ -1,0 +1,35 @@
+﻿<Window x:Class="WorldPC.ManagerMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Мир ПК - Меню менеджера" Height="434" Width="860">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+
+        <DataGrid Name="orderRepairList" HorizontalAlignment="Left" Height="339" Margin="10,41,0,0" VerticalAlignment="Top" Width="636" IsReadOnly="True" AutoGenerateColumns="False" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="Auto" Header="ID" Binding="{Binding id}"/>
+                <DataGridTextColumn Width="Auto" Header="Дата заказа" Binding="{Binding delivery_date}"/>
+                <DataGridTextColumn Width="Auto" Header="ФИО клиента" Binding="{Binding clientFullName}"/>
+                <DataGridTextColumn Width="Auto" Header="Проблема" Binding="{Binding describe}"/>
+                <DataGridTextColumn Width="Auto" Header="ФИО сборщика" Binding="{Binding staffFullName}"/>
+                <DataGridTextColumn Width="Auto" Header="Техника" Binding="{Binding model}"/>
+                <DataGridTextColumn Width="Auto" Header="Статус" Binding="{Binding status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BackBtn" Click="BackBtn_Click" Content="Назад" HorizontalAlignment="Left" Margin="686,353,0,0" VerticalAlignment="Top" Width="97" Height="27" Background="#FF081555" Foreground="White"/>
+        <Label x:Name="managerFullNamelbl" Foreground="white" Content="" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="listCollectors" HorizontalAlignment="Left" Margin="662,62,0,0" VerticalAlignment="Top" Width="145"/>
+        <ComboBox Name="listStatuses" HorizontalAlignment="Left" Margin="662,124,0,0" VerticalAlignment="Top" Width="145"/>
+        <Label Content="Список сборщиков:" HorizontalAlignment="Left" Margin="662,36,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Статус заказа:" HorizontalAlignment="Left" Margin="662,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,0.502" Foreground="White"/>
+        <Button Name="EditOrderBtn" Click="EditOrderBtn_Click" Content="Изменить заказ" HorizontalAlignment="Left" Margin="686,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.076,0.804" Width="97" Height="29" Background="#FF081555" Foreground="White"/>
+        <Button Name="DeleteOrderBtn" Click="DeleteOrderBtn_Click" Content="Удалить заказ" HorizontalAlignment="Left" Margin="686,318,0,0" VerticalAlignment="Top" Height="29" Width="97" Background="#FF081555" Foreground="White"/>
+
+    </Grid>
+</Window>

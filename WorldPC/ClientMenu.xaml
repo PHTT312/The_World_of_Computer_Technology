@@ -1,0 +1,32 @@
+﻿<Window x:Class="WorldPC.ClientMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Мир ПК - Работа с клиентом" Height="330" Width="575">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="surnameTb" HorizontalAlignment="Left" Margin="28,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="21" FontSize="14"/>
+        <TextBox x:Name="nameTb" HorizontalAlignment="Left" Margin="210,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="21" FontSize="14"/>
+        <TextBox x:Name="patronymicTb" HorizontalAlignment="Left" Margin="388,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="21" FontSize="14"/>
+        <TextBox x:Name="phoneTb" HorizontalAlignment="Left" Margin="28,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="21" FontSize="14"/>
+        <TextBox x:Name="adressTb" HorizontalAlignment="Left" Margin="210,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="21" FontSize="14"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="210,25,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="388,25,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="28,158,0,0" VerticalAlignment="Top" Foreground="#FFEAEAEA"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="210,158,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="AddClientBtn" Click="AddClientBtn_Click" Content="Продолжить" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top" Width="143" Height="27" Background="#FF081555" FontSize="14" Foreground="White" FontWeight="Normal"/>
+        <TextBox x:Name="serialTb" HorizontalAlignment="Left" Margin="28,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="21" FontSize="14"/>
+        <Label Content="Серия" HorizontalAlignment="Left" Margin="28,94,0,0" VerticalAlignment="Top" Foreground="#FFEDEDED"/>
+        <TextBox x:Name="numberTb" HorizontalAlignment="Left" Margin="210,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="21" FontSize="14"/>
+        <Label Content="Паспорт" HorizontalAlignment="Left" Margin="210,94,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox Name="genderList" HorizontalAlignment="Left" Margin="388,125,0,0" VerticalAlignment="Top" Width="143" Height="21"/>
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="388,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.202,-0.011" Foreground="White"/>
+        <Button x:Name="BackBtn" Click="BackBtn_Click" Content="Назад" HorizontalAlignment="Left" Margin="210,250,0,0" VerticalAlignment="Top" Width="63" Height="27" Background="#FF081555" FontSize="14" Foreground="White" FontWeight="Normal"/>
+    </Grid>
+</Window>

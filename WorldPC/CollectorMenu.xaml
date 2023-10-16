@@ -1,0 +1,25 @@
+﻿<Window x:Class="WorldPC.CollectorMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Мир ПК - Меню сборщика" Height="450" Width="863">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <Button Name="BackBtn" Click="BackBtn_Click" Content="Назад" HorizontalAlignment="Left" Margin="702,348,0,0" VerticalAlignment="Top" Width="99" Height="30" RenderTransformOrigin="0.808,-0.284" FontSize="14" Background="#FF081555" Foreground="White"/>
+        <DataGrid Name="computerList" HorizontalAlignment="Left" Height="339" Margin="10,39,0,0" VerticalAlignment="Top" Width="636" MouseDoubleClick="computerList_MouseDoubleClick" IsReadOnly="True" AutoGenerateColumns="False" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Модель" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Тип техники" Binding="{Binding typeName}"/>
+                <DataGridTextColumn Header="Характеристика" Binding="{Binding characteristic}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Name="fullNamelbl" Foreground="white" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
+        <Button Name="HistoryOpenBtn" Click="HistoryOpenBtn_Click" Content="История поломок" HorizontalAlignment="Left" Margin="682,298,0,0" VerticalAlignment="Top" Width="138" Height="36" FontSize="14" Background="#FF081555" Foreground="White"/>
+    </Grid>
+</Window>

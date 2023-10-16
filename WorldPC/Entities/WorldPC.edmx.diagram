@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="566ef5f39d424a3f89140691eeb5da8a" Name="Diagram1">
+        <EntityTypeShape EntityType="WorldPCModel.client" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.computer_equipment" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.crash_history" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.gender" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.history_list" Width="1.5" PointX="7.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.info" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.model" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.post" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.repair_order" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.staff" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.status" Width="1.5" PointX="6" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="WorldPCModel.type" Width="1.5" PointX="1.5" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="WorldPCModel.FK_client_gender" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_repair_order_client" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_computer_equipment_model" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_crash_history_computer_equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_repair_order_computer_equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_crash_history_staff" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_history_list_crash_history" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_Main_Logs" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_model_type" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_Main_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_repair_order_staff" ManuallyRouted="false" />
+        <AssociationConnector Association="WorldPCModel.FK_repair_order_status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

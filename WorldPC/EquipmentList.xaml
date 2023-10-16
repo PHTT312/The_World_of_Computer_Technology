@@ -1,0 +1,24 @@
+﻿<Window x:Class="WorldPC.EquipmentList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldPC"
+        mc:Ignorable="d"
+        Title="Техника в ремонте" Height="450" Width="629">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg"/>
+        </Grid.Background>
+        <DataGrid Name="computerList" HorizontalAlignment="Center" Height="339" Margin="0,39,0,0" VerticalAlignment="Top" Width="609" IsReadOnly="True" AutoGenerateColumns="False" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="Auto" Header="ID" Binding="{Binding id}"/>
+                <DataGridTextColumn Width="*" Header="Модель" Binding="{Binding model}"/>
+                <DataGridTextColumn Width="*" Header="Тип техники" Binding="{Binding typeName}"/>
+                <DataGridTextColumn Width="Auto" Header="Характеристика" Binding="{Binding characteristic}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Name="directorFullNamelbl" Foreground="white" Content="" HorizontalAlignment="Left" Margin="61,4,0,0" VerticalAlignment="Top"/>
+        <Button Name="BackBtn" Click="BackBtn_Click" Content="Назад" HorizontalAlignment="Left" Margin="6,381,0,0" VerticalAlignment="Top" Width="97" Height="28" Foreground="White" Background="#FF081555" FontSize="14"/>
+    </Grid>
+</Window>
